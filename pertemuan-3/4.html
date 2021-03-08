@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar Javascript Mengenal Tipe Data number</title>
+</head>
+<body>
+    <h1>Tipe Data Number Pada Javascript</h1>
+
+	<!-- id hasil -->
+	<div id="hasil"></div>
+
+	<script>
+		// tipe data Number
+		var angka = 100;
+
+		// menampilkan tipe data number pada element id hasil
+		document.getElementById("hasil").innerHTML = angka;
+	</script>
+
+    <h1>Tipe Data String Pada Javascript</h1>
+
+    <!-- id hasil -->
+    <div id="hasil"></div>
+
+    <script>
+        // tipe data string
+        var kalimat = "Belajar javascript menyenangkan";
+
+        // menampilkan tipe data string pada element id hasil
+        document.getElementById("hasil").innerHTML = kalimat;
+    </script>
+
+    <h1>Tipe Data Array Pada Javascript</h1>
+
+    <!-- id hasil -->
+    <div id="hasil"></div>
+
+    <script>
+        // tipe data Array
+        var hewan = ["Kambing", "Bebek", "Ayam"];
+
+        // menampilkan tipe data Array pada element id hasil
+        document.getElementById("hasil").innerHTML = hewan[1];
+    </script>
+
+    <h1>Tipe Data Object Pada Javascript</h1>
+
+    <!-- id hasil -->
+    <div id="hasil"></div>
+
+    <script>
+        // tipe data object		
+        var manusia = {
+            nama        : "Sausan Nabilah",
+            alamat      : "Banda Aceh",
+            umur        :  19,
+            pekerjaan   : "Mahasiswi"
+        };
+
+        // menampilkan tipe data object pada element id hasil
+        document.getElementById("hasil").innerHTML = "Nama Saya " + manusia.nama + " tinggal di " + manusia.alamat + " . Saya sekarang berumur "+ manusia.umur +" dan bekerja sebagai " + manusia.pekerjaan;
+    </script>
+    
+</body>
+</html>

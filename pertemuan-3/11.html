@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar Javascript Manipulasi String</title>
+</head>
+<body>
+    <h1>Menemukan letak String yang di cari dengan indexOf() dan LastindexOf()</h1>
+    <p id="contoh"></p>
+
+    <script>
+
+        var kalimat = "Selamat datang di tutorial string javascript";
+        var temukan = kalimat.indexOf("tutorial");
+        document.getElementById("contoh").innerHTML = temukan;
+
+    </script>
+    
+    <h1>Menghitung jumlah karakter pada string dengan length</h1>
+    <p id="contoh"></p>
+
+    <script>
+        var kalimat = "saya belajar javascript";
+        document.getElementById("contoh").innerHTML = kalimat.length;
+    </script>
+    
+    <h1>Mencari String dengan search()</h1>
+    <p id="contoh"></p>
+
+    <script>
+        var kalimat = "belajar javascript";
+        var cari = kalimat.search("javascript");
+        document.getElementById("contoh").innerHTML = cari;
+    </script>
+
+    <h1>Filter string dengan slice()</h1>
+    <p id="contoh"></p>
+
+    <script>
+        var kalimat = "belajar javascript";   
+        var filter = kalimat.slice(22, 42);
+        document.getElementById("contoh").innerHTML = filter;
+    </script>
+
+    <h1>Mengganti string dengan replace()</h1>
+    <p id="contoh"></p>
+
+    <script>
+        var kalimat = "belajar javascript";   
+		var ganti = kalimat.replace('javascript', 'pemrograman');
+        document.getElementById("contoh").innerHTML = ganti;
+    </script>
+
+    <h1>Huruf besar kecil dengan toUpperCase() dan LowerCase()</h1>>
+    <p id="besar"></p>
+    <p id="kecil"></p>
+
+    <script>
+        var kalimat = "Belajar JAVASCRIPT";   
+		
+  	    // mengubah ke huruf besar
+  	    var a = kalimat.toUpperCase();
+  
+    // mengubah ke huruf kecil
+  	    var b = kalimat.toLowerCase();
+  
+        document.getElementById("besar").innerHTML = a;
+  	    document.getElementById("kecil").innerHTML = b;
+    </script>
+
+    <h1>Menggabungkan String dengan concat()</h1>>
+    <p id="contoh"></p>
+
+    <script>
+        var a = "Sausan";    
+  	    var b = "Nabilah";   
+		  
+        // menggabungkan string
+  	    var gabung = a.concat(" ",b);  
+        document.getElementById("contoh").innerHTML = gabung;
+    </script>
+
+    <h1>Convert string ke array dengan split()</h1>>
+    <p id="contoh"></p>
+
+    <script>
+        var huruf = "a,b,c";    
+  
+     // string jadi array
+        var convert = huruf.split(",");  
+        document.getElementById("contoh").innerHTML = convert[0];
+    </script>
+
+</body>
+</html>
